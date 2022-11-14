@@ -15,7 +15,7 @@ public class Arrays {
     
     
     public static void main (String[] args){
-        arrayprimo();
+        eje4();
     }
     
     public static void ejemploarray(){
@@ -118,25 +118,31 @@ public class Arrays {
     
     public static void eje4(){
         
-        final int TAM = 4;
-        int v1[] = new int[TAM];
-        int v2[] = new int[TAM];
         Scanner sc = new Scanner(System.in);
-        
-        
-         for (int i = 0; i < TAM; i++) {
-            System.out.println("Introduce la posición " + i + " del vector: ");
-            v1[i] = sc.nextInt();
-            v2[i] = sc.nextInt();
-        }
-         
-        boolean iguales = true;
-        for (int i = 0; i < TAM; i++) {
-           if( v1[i] != v2[i]){
-              iguales = false;
-           }
 
+        final int size = 4;
+        int[] array1 = new int[size];
+        int[] array2 = new int[size];
+
+        System.out.println("Introduce los valores del primer array:");
+        for (int i = 0; i < array1.length; i++) {
+            array1[i] = sc.nextInt();
         }
+
+        System.out.println("Introduce los valores del segundo array:");
+        for (int i = 0; i < array2.length; i++) {
+            array2[i] = sc.nextInt();
+        }
+
+        
+            for (int i = 0; i < array1.length; i++) {
+                if (array1[i] != array2[i]) {
+                    System.out.println("Los arrays no coinciden.");
+                    break;
+                } else if (i == array1.length - 1) {
+                    System.out.println("Los arrays coinciden.");
+                }
+            }
     }
   
 }
