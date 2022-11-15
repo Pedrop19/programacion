@@ -15,7 +15,19 @@ public class Arrays {
     
     
     public static void main (String[] args){
-        eje4();
+        
+        Scanner sc = new Scanner(System.in);
+        int array [] = new int [5];
+        int n = 7;
+        
+        array[0] = 8;
+        array[1] = 7;
+        array[2] = 5; 
+        array[3] = 7;
+        array[4] = 9;
+        
+        System.out.println(ejer );
+        
     }
     
     public static void ejemploarray(){
@@ -144,5 +156,18 @@ public class Arrays {
                 }
             }
     }
-  
+    
+    public static boolean ejer5(int n, int[]array) {
+        
+      for (int i = 0; i < array.length; i++) {
+            if (array[i] == n){
+                return true;
+            }
+      }
+        return false;
+    }
+    
+    public static void ejer6(){
+        
+    }
 }
