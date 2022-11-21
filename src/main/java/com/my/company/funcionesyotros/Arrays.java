@@ -15,19 +15,8 @@ public class Arrays {
     
     
     public static void main (String[] args){
-        
-        Scanner sc = new Scanner(System.in);
-        int array [] = new int [5];
-        int n = 7;
-        
-        array[0] = 8;
-        array[1] = 7;
-        array[2] = 5; 
-        array[3] = 7;
-        array[4] = 9;
-        
-        System.out.println(ejer );
-        
+       
+        ejer6();
     }
     
     public static void ejemploarray(){
@@ -168,6 +157,62 @@ public class Arrays {
     }
     
     public static void ejer6(){
-        
-    }
-}
+       
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("ingrese el tamaño del vector 1");
+
+        int size1 = scanner.nextInt();
+
+        int[] vector1 = new int[size1];
+
+        System.out.println("ingrese el tamaño del vector 2");
+
+        int size2 = scanner.nextInt();
+
+        int[] vector2 = new int[size2];
+
+        System.out.println("ingrese los valores del vector 1");
+
+        for (int i = 0; i < size1; i++) {
+
+        vector1[i] = scanner.nextInt();
+
+        }
+
+        System.out.println("ingrese los valores del vector 2");
+
+        for (int i = 0; i < size2; i++) {
+
+        vector2[i] = scanner.nextInt();
+
+        }
+
+        int[] vector3 = new int[size1 + size2];
+
+        for (int i = 0; i < size1; i++) {
+
+        vector3[i] = vector1[i];
+
+        }
+
+        for (int i = 0; i < size2; i++) {
+
+        vector3[i + size1] = vector2[i];
+
+        }
+
+
+        System.out.println("vector 3");
+
+        for (int i = 0; i < vector3.length; i++) {
+
+        System.out.print(vector3[i] + " ");
+
+        }
+
+        }
+
+        }
+     
+
