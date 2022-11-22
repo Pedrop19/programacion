@@ -176,7 +176,7 @@ public class Arrays {
 
         for (int i = 0; i < size1; i++) {
 
-        vector1[i] = scanner.nextInt();
+            vector1[i] = scanner.nextInt();
 
         }
 
@@ -184,7 +184,7 @@ public class Arrays {
 
         for (int i = 0; i < size2; i++) {
 
-        vector2[i] = scanner.nextInt();
+            vector2[i] = scanner.nextInt();
 
         }
 
@@ -192,27 +192,26 @@ public class Arrays {
 
         for (int i = 0; i < size1; i++) {
 
-        vector3[i] = vector1[i];
+            vector3[i] = vector1[i];
 
         }
 
         for (int i = 0; i < size2; i++) {
 
-        vector3[i + size1] = vector2[i];
+            vector3[i + size1] = vector2[i];
 
         }
-
 
         System.out.println("vector 3");
 
         for (int i = 0; i < vector3.length; i++) {
 
-        System.out.print(vector3[i] + " ");
+            System.out.print(vector3[i] + " ");
 
         }
 
-        }
+    }
 
-        }
+}
      
 

@@ -127,9 +127,7 @@ public class Menu {
                 break;
 
                 default:
-                    System.out.println("No ha elegido una opción válida");
-                    System.out.println("");
-                break;
+                   
             }
         } while (opcion != 5);
     }

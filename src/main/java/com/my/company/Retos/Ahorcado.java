@@ -33,7 +33,7 @@ public class Ahorcado {
 		
 		while(vidas > 0 && !ganar) {
 			
-			// Mostrar la palabra con asteriscos
+			// Mostrar la palabra con asteriscos cada vez que ponga una letra
                         
 			for(int i = 0; i < palabra.length(); i++) {
 				if(palabra.charAt(i) == letrasAcertadas[i]) {
