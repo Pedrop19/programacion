@@ -76,8 +76,7 @@ public class simulacro2 {
         
         System.out.println("Ingrese los valores del primer vector ");
         
-        for (int i = 0; i < size1; i++) {
-                       
+        for (int i = 0; i < size1; i++) {                      
             v1[i] = sc.nextInt();
         }
         
@@ -85,20 +84,15 @@ public class simulacro2 {
         int pos = 0;
         int cer = 0;
         
-        for (int i = 0; i < size1; i++) {
-            
-            if (v1[i] < 0){
+        for (int i = 0; i < size1; i++) {   
+            if (v1[i] < 0)
                 neg++;
-            }else{
-                if(v1[i] == 0){
+            else
+                if(v1[i] == 0)
                     cer++;
-                }else{
-                    if(v1[i] > 0){
+                else
+                    if(v1[i] > 0)
                         pos++;
-                    }
-                }
-                
-            }
         }
         
         System.out.println("Positivos: " + pos + " Negativos: " + neg + " Ceros: " + cer);
@@ -117,21 +111,18 @@ public class simulacro2 {
         int size1 = sc.nextInt();
         
         int[] alturas  = new int[size1];
-       
+        
+        double media = 0;
         
         System.out.println("Ingrese las alturas a comparar ");
         
         for (int i = 0; i < size1; i++) {
-            
             alturas[i] = sc.nextInt();
+            media += alturas[i];
         }
         
-       int suma = 0;
-       
-        for (int i = 0; i < size1; i++) {
-            suma = suma + alturas[i];
-        }
-        float media = suma / size1;
+        media = media / (double) size1;
+        
         System.out.println(media);
        
         
@@ -139,23 +130,24 @@ public class simulacro2 {
         int menor = 0;
         
         for (int i = 0; i < size1; i++) {
-                if(alturas[i] < media){
-                    menor++;
-                }else{
-                    if(alturas[i] > media){
-                        mayor ++;
-                    }
-                }
+            if(alturas[i] < media)
+                menor++;
+            else
+                if(alturas[i] > media)
+                    mayor ++;                 
+        }
+        
                 
             
-        if(mayor > menor){
+        if(mayor > menor)
             System.out.println("Hay más personas que superan la media");
-        if(menor > mayor ){
+        
+        if(menor > mayor )
             System.out.println("Hay más personas que no superan la media");
-        if(menor == mayor){       
+        
+        if(menor == mayor)       
             System.out.println("Hay las mismas personas que superan y estan por debajo de la media");
-                }
-            }
-        }
+                
+            
     }
 }
